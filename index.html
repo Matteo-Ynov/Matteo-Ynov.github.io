@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Sorting</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+</head>
+<body>
+  <fieldset class="form-group">
+    <input type="range" min="10" max="100" value="10" name="percentage" id="number">
+    <div class="form-group">
+      <select id="sorting">
+        <option></option>
+        <option>Selection Sort</option>
+        <option>Bubble Sort</option>
+        <option>Insertion Sort</option>
+        <option>Merge Sort</option>
+        <option>Quick Sort</option>
+      </select>
+    </div>
+    <button onclick="setup()" type="button" class="btn btn-primary">Valider</button>
+  </fieldset>
+  
+</body>
+<script src="index.js"></script>
+</html>

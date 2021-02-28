@@ -1,0 +1,52 @@
+body {
+    padding: 2em;
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  
+  p {
+    margin-bottom: 2em;
+  }
+  
+  input[type="range"] {
+    position: relative;
+  }
+  
+  input[type="range"]:before {
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    margin-left: -10px;
+    content: attr(value);
+    display: block;
+    text-align: center;
+    width: 20px;
+    height: 10px;
+  }
+
+  .formfield-select--container select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	width: 110%; 
+	/* 
+		On est sûr de ne plus voir
+		la flèche native 
+	*/
+	
+	height: auto;
+	border: 0; 
+	margin: 0;
+	padding: .75em;
+	border-radius: 0;
+	
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/* 
+		On empêche le texte d'aller
+		jusqu'au bout s'il est trop long
+	*/
+
+}
